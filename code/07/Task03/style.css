@@ -1,0 +1,71 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+}
+header, footer, div.boxcontent, div.boxsidebar, div.boxsidebar2{
+	padding: 5px;
+	background-color: lightgray;
+}
+header, footer, div.body{
+	margin: 10px;
+	overflow: hidden;
+}
+div.boxcontent{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+div.body > *{
+	float: left;
+}
+div.sidebar{
+	width: 20%;
+}
+div.content{
+	width: 65%;
+}
+div.sidebar2{
+	width: 15%;
+}
+div.kappa{
+	position: absolute;
+	padding-top: 15px;
+	animation: kappa 10s; 
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation: kappa 10s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+@keyframes kappa{ /
+	0%   {right: -12%;}
+	100% {right: 100%;}
+}
+
+@-webkit-keyframes kappa{ 
+	0%   {right: -12%;}
+	100% {right: 100%;}
+}
+
+div.kappa2{
+	position: absolute;
+	padding-top: 15px;
+	animation: kappa2 10s; 
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation: kappa2 10s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+@keyframes kappa2{ 
+	0%   {left: -12%;}
+	100% {left: 100%;}
+}
+
+@-webkit-keyframes kappa2{ 
+	0%   {left: -12%;}
+	100% {left: 100%;}
+}
