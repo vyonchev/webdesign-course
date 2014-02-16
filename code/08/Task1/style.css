@@ -1,0 +1,39 @@
+* {
+
+	margin: 0; padding: 0;
+}
+a {
+	text-decoration: none; color: inherit; 
+}
+nav {
+	display: block; 
+}
+.clear { 
+	clear: both;
+}
+
+nav.mainnav, nav.mainnav a {
+	background-color:	lightgrey; 
+}
+nav.mainnav a:hover {
+	background-color: cyan;
+}
+nav.mainnav a { 
+	display: block; padding: 20px; white-space: nowrap;
+}
+
+nav.mainnav > ul > li { 
+	float: left; 
+}
+nav.mainnav > ul li {
+	display: block; position: relative;
+}
+nav.mainnav > ul li ul {
+	display: none; position: absolute;
+}
+nav.mainnav > ul li:hover > ul { 
+	display: block; 
+}
+nav.mainnav > ul li ul li ul {
+	left: 100%; top: 0%; 
+}
